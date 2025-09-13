@@ -9,7 +9,7 @@
 
 1. `Скриншоты ранера и пайплайна`
 ![Runner settings](https://github.com/mshiyanov/8-03-hw/tree/main/screenshots/01_runner.png)
-![Pipeline settings](screenshots/01_PipeLines.png) 
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_PipeLines.PNG) 
 
 ```
 Поле для вставки кода...
