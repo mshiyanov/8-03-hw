@@ -19,22 +19,21 @@
 `Запушил репозиторий на GitLab, изменив origin. Создал .gitlab-ci.yml`
 
 `Код  gitlab-ci.yml`
-`stages:
+
+```yaml
+stages:
   - test
   - build
 
 test:
   stage: test
   image: golang:1.17
-  script:
-   - go test .
-  tags:
-    - netology
+  script: 
+    - go test .
 
 build:
   stage: build
   image: docker:latest
   script:
-   - docker build .
-  tags:
-    - netology`
+    - docker build .
+
