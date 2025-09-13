@@ -8,8 +8,8 @@
 Пoшел другим путем, создал две машины в ya.cloud, на одной установлен GitLab, на другой runner. 
 
 1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `![Runner settings](screenshots/01.runner.png)`
-3. `![Runner settings](screenshots/01.PipeLines.png)` 
+2. `![Runner settings](screenshots/01_runner.png)`
+3. `![Runner settings](screenshots/01_PipeLines.png)` 
 
 ```
 Поле для вставки кода...
