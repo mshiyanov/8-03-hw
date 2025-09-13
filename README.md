@@ -8,7 +8,7 @@
 Пoшел другим путем, создал две машины в ya.cloud, на одной установлен GitLab, на другой runner. 
 
 1. `Скриншоты ранера и пайплайна`
-![Runner settings](https://github.com/mshiyanov/8-03-hw/tree/main/screenshots/01_runner.png)
+![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_runner.PNG)
 ![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_PipeLines.PNG) 
 
 ```
