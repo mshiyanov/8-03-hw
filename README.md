@@ -57,9 +57,15 @@
 `Текст использованных команд в GitHub`
 
 ```
-git add screenshots #добавил новые скриншоты
-git commit -m "Домашнее задание по Zabbix"
-git push origin main
+git add screenshots                            #добавил новые скриншоты
+git commit -m "Добавление скриншотов"          #закоммитил
+git push origin main                           #запушил
 
+```
+
+```
+git add README.md
+git commit -m "Домашнее задание по мониторингу zabbix"
+git push origin main
 
 ```
