@@ -20,11 +20,17 @@
 10. `DBPassword=password`
 11. `systemctl restart zabbix-server apache2`
 12. `systemctl enable zabbix-server apache2`
-
  
 
 `Скриншот инсталлляции`
 ![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Install.PNG)
+
+`Скриншот окончания инсталлляции`
+![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/finish.PNG)
+
+`Скриншот дашборда`
+![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Dashboard.PNG)
+
 
 
 ---
