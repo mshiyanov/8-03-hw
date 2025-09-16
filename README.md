@@ -69,3 +69,12 @@ git commit -m "Домашнее задание по мониторингу zabbi
 git push origin main
 
 ```
+
+`Команды установки агента Zabbix`
+
+1. `wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.4+debian12_all.deb`
+2. `dpkg -i zabbix-release_latest_7.4+debian12_all.deb`
+3. `apt update`
+4. `apt install zabbix-agent`
+5. `systemctl restart zabbix-agent`
+6. `systemctl enable zabbix-agent`
