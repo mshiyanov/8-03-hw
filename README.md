@@ -23,7 +23,7 @@
 
  
 
-1. `Скриншот инсталлляции`
+`Скриншот инсталлляции`
 ![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Install.PNG)
 
 
