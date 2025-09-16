@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "«GitLab»" - `Шиянов Михаил Николаевич`
+# Домашнее задание к занятию "«Система мониторинга Zabbix»" - `Шиянов Михаил Николаевич`
 
 ---
 
@@ -37,29 +37,29 @@
 
 ### Задание 2
 
-`Запушил репозиторий на GitLab, изменив origin. Создал .gitlab-ci.yml`
+`Установил агентов заббикс на две VM`
 
-`Код  gitlab-ci.yml`
 
-```yaml
-stages:
-  - test
-  - build
+1. `Два агента подключены к серверу`
 
-test:
-  stage: test
-  image: golang:1.17
-  script: 
-    - go test .
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Agents.PNG)
 
-build:
-  stage: build
-  image: docker:latest
-  script:
-    - docker build .
+2. `Логи агентов подключенныых к серверу`
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Runner.PNG)
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Zagent.PNG)
+
+3. `скриншот раздела Monitoring > Latest data`
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/LastData.PNG)
+
+`Текст использованных команд в GitHub`
+
 ```
+git add screenshots #добавил новые скриншоты
+git commit -m "Домашнее задание по Zabbix"
+git push origin main
 
-1. `Скриншоты pipeline`
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_PipeLines.PNG)
-
+```
