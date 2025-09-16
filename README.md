@@ -4,11 +4,27 @@
 
 ### Задание 1
 
-Развернуть GitLab локально с помощью Vagrant не получилось. Машина поднималась, но то GtiTlab не устанавливался, то порты не слуушались.
-Пoшел другим путем, создал две машины в ya.cloud, на одной установлен GitLab, на другой runner. 
+`Установил последнюю версию Zabbix 7.4`
 
-1. `Скриншоты ранера`
-![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_runner.PNG)
+`Использованные команды:`
+
+1. `apt update`
+2. `sudo apt install postgresql`
+3. `wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.4+debian12_all.deb`
+4. `dpkg -i zabbix-release_latest_7.4+debian12_all.deb`
+5. `apt update`
+6. `apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts`
+7. `su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD'\'123456789\'';"'`
+8. `su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'`
+9. `zcat /usr/share/zabbix/sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix`
+11. `DBPassword=password`
+12. `systemctl restart zabbix-server apache2`
+13. `systemctl enable zabbix-server apache2`
+
+ 
+
+1. `Скриншот инсталлляции`
+![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Install.PNG)
 
 
 ---
