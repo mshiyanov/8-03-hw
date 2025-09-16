@@ -17,9 +17,9 @@
 7. `su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD'\'123456789\'';"'`
 8. `su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'`
 9. `zcat /usr/share/zabbix/sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix`
-11. `DBPassword=password`
-12. `systemctl restart zabbix-server apache2`
-13. `systemctl enable zabbix-server apache2`
+10. `DBPassword=password`
+11. `systemctl restart zabbix-server apache2`
+12. `systemctl enable zabbix-server apache2`
 
  
 
