@@ -5,27 +5,26 @@
 ### Задание 1
 
 
-`Задание 1`
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1_1.png)
+
+
 ![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1.png)
 
 
 ---
 
-### Задание 2
-
-`Установил агентов заббикс на две VM`
+### Задание 2-3
 
 
-1. `Два агента подключены к серверу`
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_task_2_3.png)
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Agents.PNG)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_task_2_3.png)
 
-2. `Логи агентов подключенныых к серверу`
+---
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Runner.PNG)
+### Задание 4
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Zagent.PNG)
 
-3. `скриншот раздела Monitoring > Latest data`
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_4.png)
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/LastData.PNG)
+
