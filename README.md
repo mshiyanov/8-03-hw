@@ -6,8 +6,7 @@
 
 
 `Задание 1`
-![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1.PNG)
-
+![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1.png)
 
 
 ---
