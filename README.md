@@ -4,22 +4,16 @@
 
 ### Задание 1
 
+'Cвой шаблон, в котором элементы данных, мониторящие загрузку CPU и RAM'
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1_1.png)
-
-
-![Runner settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Task_1.png)
-
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/task1.png)
 
 ---
 
 ### Задание 2-3
 
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_task_2_3.png)
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_task_2_3.png)
-
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/task2-3.png)
 ---
 
 ### Задание 4
