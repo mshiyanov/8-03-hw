@@ -23,4 +23,4 @@
 
 Конфигурация:
 
-![Pipeline settings](github.com/mshiyanov/8-03-hw/blob/main/screenshots/04edand.png)
+![Pipeline settings](http://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04edand.png)
