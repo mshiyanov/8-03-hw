@@ -1,26 +1,26 @@
-# Домашнее задание к занятию "«Система мониторинга Zabbix, часть 2»" - `Шиянов Михаил Николаевич`
+# "Домашнее задание к занятию 2 «Кластеризация и балансировка нагрузки" - `Шиянов Михаил Николаевич`
 
 ---
 
 ### Задание 1
 
-Cвой шаблон, в котором элементы данных, мониторящие загрузку CPU и RAM
+Вывод результата:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/task1.png)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01radand.png)
+
+
+Конфигурация:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02redand.png)
 
 ---
 
-### Задание 2-3
+### Задание 2
 
-1.  Добавлены два хоста shiyanovmn-1 и shiyanovmn-2
-2.  Привязаны шаблоны с названиями Задание 2-3
+Вывод:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/task2-3.png)
----
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03edand.png)
 
-### Задание 4
+Конфигурация:
 
-Создан DashBoard
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/task4.png)
-
+![Pipeline settings](github.com/mshiyanov/8-03-hw/blob/main/screenshots/04edand.png)
