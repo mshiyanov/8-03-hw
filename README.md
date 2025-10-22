@@ -4,14 +4,14 @@
 
 ### Задание 1
 
-Вывод результата:
+Схема PKT:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01radand.png)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/hsrp_advanced_shiyanov.pkt)
 
 
 Конфигурация:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02redand.png)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/PacketTracert.png)
 
 ---
 
