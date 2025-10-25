@@ -40,10 +40,10 @@ VIP адрес 10.143.98.100/24 присвоен мастер ноде:
 
 Скрипт:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/script.sh)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/script.sh)
 
 keepalived.conf
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/keepalived.conf)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/keepalived.conf)
 
 
