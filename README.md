@@ -19,8 +19,19 @@
 
 Вывод:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03edand.png)
+VIP адрес 10.143.98.100/24 присвоен мастер ноде:
 
-Конфигурация:
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_MV.PNG.jpg)
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04edand.png)
+В статусе keepalived видно, что отработал скрипт, простой пайтон сервер не запущен:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_MV.PNG.jpg)
+
+
+Адрес VIP пропал с мастер ноды:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03_MV.PNG.jpg)
+
+На Backup ноде появился VIP адрес 10.143.98.100/24
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_MV.PNG.jpg)
