@@ -35,3 +35,15 @@ VIP адрес 10.143.98.100/24 присвоен мастер ноде:
 На Backup ноде появился VIP адрес 10.143.98.100/24
 
 ![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_MV.PNG.jpg)
+
+Файлы:
+
+Скрипт:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/script.sh)
+
+keepalived.conf
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/keepalived.conf)
+
+
