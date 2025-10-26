@@ -1,49 +1,31 @@
-# "Домашнее задание к занятию 1 «Disaster recovery и Keepalived" - `Шиянов Михаил Николаевич`
+# "Домашнее задание к занятию 3 «Резервное копирование»" - `Шиянов Михаил Николаевич`
 
 ---
 
 ### Задание 1
 
-Схема PKT:
+Команда и результат:
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/hsrp_advanced_shiyanov.pkt)
-
-
-Конфигурация:
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/PacketTracert.png)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01-rsynk.jpg)
 
 ---
 
 ### Задание 2
 
-Вывод:
+Проверяем работу скрипта и вывод журнала:
 
-VIP адрес 10.143.98.100/24 присвоен мастер ноде:
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03-rsync.jpg)
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_MV.PNG.jpg)
+Состояние папок для наглядности:
 
-В статусе keepalived видно, что отработал скрипт, простой пайтон сервер не запущен:
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_MV.PNG.jpg)
-
-
-Адрес VIP пропал с мастер ноды:
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03_MV.PNG.jpg)
-
-На Backup ноде появился VIP адрес 10.143.98.100/24
-
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_MV.PNG.jpg)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04-rsync.jpg)
 
 Файлы:
 
-Скрипт:
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/script.sh)
+![Crontab](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/crontab_backup.txt)
 
-keepalived.conf
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/keepalived.conf)
+![Script](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/back-home.sh)
 
 
