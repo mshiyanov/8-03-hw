@@ -1,31 +1,22 @@
-# "Домашнее задание к занятию 3 «Резервное копирование»" - `Шиянов Михаил Николаевич`
+# "Домашнее задание к занятию «Отказоустойчивость в облаке»" - `Шиянов Михаил Николаевич`
 
 ---
 
 ### Задание 1
 
-Команда и результат:
+Cозданный балансировщик находится в статусе Active:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01-rsynk.jpg)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Balancer.jpg)
 
----
+Обе виртуальные машины в целевой группе находятся в состоянии healthy:
 
-### Задание 2
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Group.jpg)
 
-Проверяем работу скрипта и вывод журнала:
+Запрос на 80 порт на внешний IP-адрес балансировщика:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03-rsync.jpg)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Welcome.jpg)
 
-Состояние папок для наглядности:
+Файлы для загрузки:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04-rsync.jpg)
-
-Файлы:
-
-
-![Crontab](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/crontab_backup.txt)
-
-
-![Script](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/back-home.sh)
-
+![Terraform Playbook](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_YaCloud.7z)
 
