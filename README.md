@@ -1,22 +1,36 @@
-# "Домашнее задание к занятию «Отказоустойчивость в облаке»" - `Шиянов Михаил Николаевич`
+# "Домашнее задание к занятию «Кеширование Redis/memcached»" - `Шиянов Михаил Николаевич`
 
 ---
 
-### Задание 1
+### Задание 1 Кеширование
 
-Cозданный балансировщик находится в статусе Active:
+Кеширование помогает хранить данные во временной памяти, чтобы получать к ним доступ быстрее. Кеширование решает несколько проблем:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Balancer.jpg)
+Ускорение работы приложений.
+Если каждый раз обращаться к базе данных или удалённому серверу — это занимает время. Кеш позволяет хранить уже полученные данные и выдавать их мгновенно.
 
-Обе виртуальные машины в целевой группе находятся в состоянии healthy:
+Снижение нагрузки на сервер и базу данных.
+Когда много пользователей одновременно запрашивают одни и те же данные, сервер может перегружаться. Кеш уменьшает количество запросов к сложным операциям.
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Group.jpg)
+Экономия ресурсов.
+Не нужно каждый раз выполнять тяжёлые вычисления или сложные запросы — результат можно сохранить в кеше и использовать повторно.
 
-Запрос на 80 порт на внешний IP-адрес балансировщика:
+### Задание 2 Memcached
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Welcome.jpg)
+Cкриншот systemctl status memcached, где будет видно, что memcached запущен.
 
-Файлы для загрузки:
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/status_memcached.jpg)
 
-![Terraform Playbook](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_YaCloud.7z)
+### Задание 2 Удаление по TTL в Memcached
+
+Cкриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/ttl_memcached.jpg)
+
+### Задание 4 Запись данных в Redis
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/redis.JPG)
+
+
+
 
