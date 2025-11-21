@@ -8,7 +8,7 @@ Cкриншот веб-интерфейса RabbitMQ.
 
 ![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_Interface.jpg)
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/interface.jpg)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Interface.jpg)
 
 ### Задание 2:
 
