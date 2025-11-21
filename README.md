@@ -49,7 +49,7 @@ Cкриншот веб-интерфейса RabbitMQ.
 
 ![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Q1_add.JPG)
 
-![Download]https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Python.jpg)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Python.jpg)
 
 
 
