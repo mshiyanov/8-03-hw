@@ -1,56 +1,30 @@
-#  - Домашнее задание к занятию «Очереди RabbitMQ» `Шиянов Михаил Николаевич`
+#  - Домашнее задание к занятию «Работа с данными (DDL/DML)» `Шиянов Михаил Николаевич`
 
 ---
 
 ### Задание 1:
 
-Cкриншот веб-интерфейса RabbitMQ.
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_Interface.jpg)
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Interface.jpg)
-
-### Задание 2:
-
-Скриншот очереди под названием hello.
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/q_hello.jpg)
-
-Скриншот выполнения скриптов их GUI:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Scripts.jpg)
-
-Скриншот первого скрипта:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Producer.jpg)
-
-Скриншот второго скрипта:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/2_script_result.jpg)
-
-### Задание 3:
-
-Скриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой.
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Cluster.jpg)
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Policy.jpg)
+Запрос на получение списка пользователей в базе данных:
 
 
-Скриншот вывода команды rabbitmqctl cluster_status с двух нод:
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/user_list.jpg)
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_rabbitmqctl_cluster.jpg)
+Запрос на получение списка прав для пользователя sys_temp:
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_rabbitmqctl_cluster.jpg)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Previlidges.jpg)
 
-Скриншот выполнения команды rabbitmqadmin get queue='hello' на каждой из нод:
+Подключение к базе данных от имени sys_temp:
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Q_add.JPG)
+Для переподключения пришлось использовать следующие команды, т.к. модуль mysql_native_password отсутствует в версии mySQL 9.5:
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Q1_add.JPG)
+"ALTER USER 'sys_temp'@'localhost'
+IDENTIFIED WITH caching_sha2_password BY '4636';"
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Python.jpg)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Connect_secsusiful.jpg)
 
+Получение всех таблиц базы данных.:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/rise_DB.jpg)
 
 
 
