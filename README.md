@@ -29,7 +29,11 @@ IDENTIFIED WITH caching_sha2_password BY '4636';"
 
 ### Задание 2
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Tables.xlsx)
+Таблица:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/TablesCLI.jpg)
+
+![Tables.xls](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Tables.xlsx)
 
 
 
