@@ -27,6 +27,9 @@ IDENTIFIED WITH caching_sha2_password BY '4636';"
 ![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/rise_DB.jpg)
 
 
+### Задание 2
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Tables.xlsx)
 
 
 
