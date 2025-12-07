@@ -1,44 +1,49 @@
-#  - Домашнее задание к занятию «Работа с данными (DDL/DML)» `Шиянов Михаил Николаевич`
+#  - Домашнее задание к занятию «Домашнее задание к занятию «Репликация и масштабирование. Часть 1» `Шиянов Михаил Николаевич`
 
 ---
 
 ### Задание 1:
 
-Запрос на получение списка пользователей в базе данных:
+
+### Задание 2:
 
 
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/user_list.jpg)
-
-Запрос на получение списка прав для пользователя sys_temp:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Previlidges.jpg)
-
-Подключение к базе данных от имени sys_temp:
-
-Для переподключения пришлось использовать следующие команды, т.к. модуль mysql_native_password отсутствует в версии mySQL 9.5:
-
-"ALTER USER 'sys_temp'@'localhost'
-IDENTIFIED WITH caching_sha2_password BY '4636';"
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Connect_secsusiful.jpg)
-
-Получение всех таблиц базы данных.:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/rise_DB.jpg)
+Содержмое файла docker-compose.yml:
 
 
-### Задание 2
-
-Таблица:
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/TablesCLI.jpg)
-
-![Tables.xls](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Tables.xlsx)
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/compose.JPG)
 
 
+Вывод конфигрураций файлов вывод конфигов MySQL - master/conf.cnf\slave/conf.cnf:
 
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/master_conf.JPG)
 
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/slave_conf.JPG)
 
+Состояние контейнеров:
 
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/docker_ps.JPG)
 
+Настройка пользователя репликации:
 
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/user_repl.JPG)
+
+Назначены права репликации:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/grant_replication_slave.JPG)
+
+Статус мастера:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/master_status.JPG)
+
+Статус слэйва:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/show_slave_status.JPG)
+
+Тест синхронизации данных данныхЖ
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/testmicdb.JPG)
+
+На слэйве проверяем, что данные синхронизовались:
+
+![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/get_testmicdb.JPG)
