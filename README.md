@@ -66,32 +66,10 @@ Server_03 (Операционные данные):
 
 ## блок схема
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                                 |КЛИЕНТСКИЕ ПРИЛОЖЕНИЯ|                                 +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                              +
+                                              +
+                                              +
 
-    title Схема шардирования
-
-    API_GATEWAY(id1)["API GATEWAY"]
-
-    id1-->USER_SERVICE(id2)["User Service"]
-    id1-->CATALOG_SERVICE(id3)["CatalogService"]
-    id1-->STORE_SERVICE(id4)["Store Service"]
-
-    id2-->USERS_SHARD1(id5)["UsersShard1"]
-    id2-->USERS_SHARD2(id6)["UsersShard2"]
-    id2-->USERS_SHARD3(id7)["UsersShard3"]
-
-    id3-->BOOKS_SHARD1(id8)["BooksShard1"]
-    id3-->BOOKS_SHARD2(id9)["BooksShard2"]
-    id3-->BOOKS_SHARD3(id10)["BooksShard3"]
-
-    id4-->STORES_SHARD1(id11)["StoresShard1"]
-    id4-->STORES_SHARD2(id12)["StoresShard2"]
-    id4-->STORES_SHARD3(id13)["StoresShard3"]
-
-
-
-
-
-
-
-
-![Download](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/replication/compose.JPG)
