@@ -71,7 +71,11 @@ Server_03 (Операционные данные):
                                             |  
                                         |ProxySQL|
                            |                |                   |
+                      ___________       __________        __________
                       |Server_01|       |Server_02|       |Server_03|
-                      |  Users  |
-
-
+                      |  Users  |       |  Books  |       | Stores  |
+                      | Shard_A |       | Shard_A |       | Shard_A |
+                      |  Nord   |       | genre_1 |       |  City_M | 
+                      |  South  |       | genre_2 |       | City_SP |
+                      |  West   |       | genre_3 |       | City_R  |
+                      |  East   |       
