@@ -67,57 +67,25 @@ Server_03 (Операционные данные):
 ## блок схема
 
 
+    title Схема шардирования
 
-                ┌──────────────────────────┐
-                │         API GATEWAY      │
-                └─────────────┬────────────┘
-                              │
-      ┌───────────────────────┼────────────────────────┐
-      │                       │                        │
-┌─────────────┐        ┌──────────────┐        ┌───────────────┐
-│ User Service│        │CatalogService│        │ Store Service │
-└─────┬───────┘        └──────┬──────┘         └──────┬────────┘
-      │                       │                       │
-      ▼                       ▼                       ▼
-┌─────────────┐        ┌─────────────┐        ┌──────────────┐
-│UsersShard1  │        │BooksShard1  │        │StoresShard1  │
-│UsersShard2  │        │BooksShard2  │        │StoresShard2  │
-│UsersShard3  │        │BooksShard3  │        │StoresShard3  │
-└─────────────┘        └─────────────┘        └──────────────┘
+    API_GATEWAY(id1)["API GATEWAY"]
 
+    id1-->USER_SERVICE(id2)["User Service"]
+    id1-->CATALOG_SERVICE(id3)["CatalogService"]
+    id1-->STORE_SERVICE(id4)["Store Service"]
 
+    id2-->USERS_SHARD1(id5)["UsersShard1"]
+    id2-->USERS_SHARD2(id6)["UsersShard2"]
+    id2-->USERS_SHARD3(id7)["UsersShard3"]
 
+    id3-->BOOKS_SHARD1(id8)["BooksShard1"]
+    id3-->BOOKS_SHARD2(id9)["BooksShard2"]
+    id3-->BOOKS_SHARD3(id10)["BooksShard3"]
 
-
-┌─────────────────────────────────────────────────────┐
-│                  КЛИЕНТСКИЕ ПРИЛОЖЕНИЯ              │
-└──────────────────────────┬──────────────────────────┘
-                           │
-┌──────────────────────────▼──────────────────────────┐
-│              СЛОЙ ПРОКСИ/РОУТЕРА БД                 │
-│        (MySQL Router, ProxySQL, Vitess)             │
-└──┬─────────────────┬──────────────────┬─────────────┘
-   │                 │                  │
-┌──▼────┐      ┌────▼────┐       ┌─────▼────┐
-│Сервер │      │ Сервер  │       │ Сервер   │
-│   1   │      │    2    │       │    3     │
-│USERS  │      │ BOOKS   │       │ STORES   │
-├───────┤      ├─────────┤       ├──────────┤
-│Шард A │      │Шард A   │       │Шард A    │
-│Север  │      │Жанр 1   │       │Город 1-5 │
-├───────┤      ├─────────┤       ├──────────┤
-│Шард B │      │Шард B   │       │Шард B    │
-│Юг     │      │Жанр 2   │       │Город 6-10│
----------      -----------       ------------
-│Шард C │      │Шард C   -
-│Запад  │      │Жанр 3   -
----------      -----------
--Шард D -
--Восток -
----------
-
-
-
+    id4-->STORES_SHARD1(id11)["StoresShard1"]
+    id4-->STORES_SHARD2(id12)["StoresShard2"]
+    id4-->STORES_SHARD3(id13)["StoresShard3"]
 
 
 
