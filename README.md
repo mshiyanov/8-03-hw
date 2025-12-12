@@ -70,3 +70,8 @@ Server_03 (Операционные данные):
                                             |  
                                             |  
                                         |ProxySQL|
+                           |                |                   |
+                      |Server_01|       |Server_02|       |Server_03|
+                      |  Users  |
+
+
