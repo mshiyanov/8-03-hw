@@ -71,6 +71,6 @@
 
 #### Логи с машины жертвы Fail2ban:
 
-![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Fail2ban.jpg)
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/FFail2ban.jpg)
 
 
