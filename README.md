@@ -56,3 +56,21 @@
 #### Реакция suricata:
 
 ![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/nmap%20-sV(suricata).jpg)
+
+
+## Вывод - Fail2ban не реагирует на данные типы сканирования, т.к. он читает логи сервисов и ищет неудачные попытки залогиниться.
+
+
+### Задание 2: Проведите атаку на подбор пароля для службы SSH:.
+
+#### Брут на машину жертву:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/hydra.jpg)
+
+
+
+#### Логи с машины жертвы Fail2ban:
+
+![Pipeline settings](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Fail2ban.jpg)
+
+
