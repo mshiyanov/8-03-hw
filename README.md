@@ -15,7 +15,7 @@
 
 ![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Docker_run.JPG)
 
-Переименование контейнера (НЕ удаляя)
+Переименование контейнера не удаляя
 
 ![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Docker_rename.JPG)
 
@@ -23,3 +23,31 @@
 Выполните команду м задания и убедитесь с помощью curl, что индекс-страница доступна.
 
 ![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Chain_command.JPG)
+
+### Задание 3: Подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_third_task.jpg)
+
+С помощью docker attach мы подключаемся к процессу PID 1. При нажатии Ctrl-C, терминал отправляет сигнал SIGINT  процессу PID 1, для
+nginx это означает остановку master-процесса, а когда PID 1 завершился — Docker считает работу с контейнером законченным, и  переходит в Exited.
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_third_task.jpg)
+
+Реддактируем файл:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03_third_task.jpg)
+
+Выполнить nginx -s reload, затем curl внутри контейнера, выйти из контейнера, проверки на хосте и краткое объяснение проблемы
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_third_task.jpg)
+
+Контейнер опубликован во вне как host 127.0.0.1:8080 → container 80/tcp.
+
+Мы  поменяли nginx на listen 81, то есть внутри контейнера теперь сервис на 81, а docker-публикация всё ещё ведёт на 80.
+
+Поэтому curl http://127.0.0.1:8080 не работает, docker пробрасывает на container:80, а там порт не прослушивается.
+
+
+Удаляем контейнер:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/05_third_task.jpg)
