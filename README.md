@@ -51,3 +51,58 @@ nginx это означает остановку master-процесса, а к�
 Удаляем контейнер:
 
 ![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/05_third_task.jpg)
+
+
+
+
+### Задание 4: Запуск контейнеров и подключение к ним.
+
+Запуск контейнеров согласно заданию:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_five_task.jpg)
+
+Подключение к первому контейнеру с помощью docker exec и создайте текстовый файл любого содержания в /data.
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_five_task.jpg)
+
+
+Добавляем ещё один файл в текущий каталог $(pwd) на хостовой машине.
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03_five_task.jpg)
+
+Подключение во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_five_task.jpg)
+
+
+### Задание 5: Создание директории и файлов.
+
+Создание файлов и запуск контейнера:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/01_six.jpg)
+
+Будет запущен compose.yaml, потому что docker compose по умолчанию ищет compose-файл в текущей директории и отдает предпочтение каноническому имени compose.yaml, 
+но docker-compose.yaml поддерживается для совместимости.
+
+Редактирование compose.yaml, чтобы запускались оба файла используя include
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/02_six.jpg)
+
+Заливаем образ custom-nginx как custom-nginx:latest в локальный registry
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/03_six.jpg)
+
+Задаем логин\пароль:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/04_six.jpg)
+
+Задеплоить в Portainer Stack с nginx из локального registry
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/05_six.jpg)
+
+Проверка:
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/06_six.jpg)
+
+
+
