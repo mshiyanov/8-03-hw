@@ -104,5 +104,16 @@ nginx это означает остановку master-процесса, а к�
 
 ![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/06_six.jpg)
 
+Скриншот от поля "AppArmorProfile" до "Driver".
 
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/07_six.jpg)
+
+
+Удаляем любой из манифестов компоуза(например compose.yaml
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/08_six.jpg)
+
+Файл YAML
+
+![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/compose.yaml)
 
