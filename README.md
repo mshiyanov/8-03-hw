@@ -31,7 +31,7 @@ docker run
 
 Отчет:
 
-![Docker_run](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/scan-report.json)
+![Report](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/scan-report.json)
 
 
 ### Задание 3:
@@ -45,4 +45,49 @@ docker run
 
 Ссылка на FORK
 
-![Docker_run](https://github.com/mshiyanov/shvirtd-example-python.git)
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/shvirtd-example-python.git)
+
+### Задание 6:
+
+Скачиваем образ docker pull hashicorp/terraform:latest
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/hashicorp.jpg)
+
+Установка DIVE
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/dive.jpg)
+
+Находим /bin/terraform исаользуя dive hashicorp/terraform:latest
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/bin-terraform.jpg)
+
+Сохраняем образ через docker save
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Terraformtarr.jpg)
+
+Находим blob, где есть bin/terraform и извлекаем бинарник из архива
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/mkdirr.jpg)
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/binary.jpg)
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/Extract.jpg)
+
+Kопируем terraform в систему и проверим версию
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/terversion.jpg)
+
+
+### Задание 6.1:
+
+Создаем контейнер
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/6.1.1.jpg)
+
+Копируем файл из контейнера
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/6.1.2.jpg)
+
+Файл:
+
+![https://github.com/mshiyanov/shvirtd-example-python.git](https://github.com/mshiyanov/8-03-hw/blob/main/screenshots/6.1.3.jpg)
